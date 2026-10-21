@@ -72,6 +72,11 @@
     (data.links || []).forEach(function (link) {
       if (!link || !link.url || !isSafeUrl(link.url)) return;
 
+      // Phone links: keep only the + and digits, so hidden characters can't end up in the dialer.
+      if (/^tel:/i.test(link.url)) {
+        link = Object.assign({}, link, { url: "tel:" + link.url.slice(4).replace(/[^\d+]/g, "") });
+      }
+
       var li = document.createElement("li");
       li.className = "row";
 
