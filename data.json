@@ -1,48 +1,25 @@
 {
-  "title": "Yasser | Links",
-  "name": "Your Name",
-  "description": "Software developer. I build web tools and write about what I learn along the way.",
-  "image": "profile.svg",
+  "title": "Fayaz | Links",
+  "name": "Fayaz Boudjadja",
+  "description": "None",
+  "image": "720611487_18013041065903468_2628099714636869920_n.jpg",
   "links": [
-    {
-      "platform": "github",
-      "label": "GitHub",
-      "url": "https://github.com/yourname",
-      "description": "Source code and open projects"
-    },
-    {
-      "platform": "linkedin",
-      "label": "LinkedIn",
-      "url": "https://www.linkedin.com/in/yourname",
-      "description": "Work history and contact"
-    },
-    {
-      "platform": "x",
-      "label": "X",
-      "url": "https://x.com/yourname",
-      "description": "Short updates"
-    },
     {
       "platform": "instagram",
       "label": "Instagram",
-      "url": "https://www.instagram.com/yourname"
+      "url": "https://www.instagram.com/fa_ya__zz"
     },
     {
-      "platform": "youtube",
-      "label": "YouTube",
-      "url": "https://www.youtube.com/@yourname",
-      "description": "Tutorials and walkthroughs"
+      "platform": "Facebook",
+      "label": "Facebook",
+      "url": "https://www.facebook.com/fayaz.bou.599327",
+      "description": "Connect with me on Facebook"
     },
     {
-      "platform": "telegram",
-      "label": "Telegram",
-      "url": "https://t.me/yourname"
-    },
-    {
-      "platform": "email",
-      "label": "Email",
-      "url": "mailto:hello@example.com",
-      "description": "hello@example.com"
+      "platform": "phone",
+      "label": "Phone",
+      "url": "tel:+213549467398",
+      "description": "+213 549 467 398"
     }
   ]
 }
