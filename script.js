@@ -62,8 +62,10 @@
     if (data.image) {
       avatar.src = data.image;
       avatar.alt = name ? "Photo of " + name : "Profile photo";
+      $("imgFull").src = data.image;
+      $("imgFull").alt = avatar.alt;
     } else {
-      avatar.hidden = true;
+      $("avatarBtn").hidden = true;
     }
 
     var list = $("links");
@@ -165,6 +167,21 @@
     }
   });
 
+  /* ---------- Image viewer ---------- */
+  var imgDialog = $("imgDialog");
+
+  $("avatarBtn").addEventListener("click", function () {
+    if (typeof imgDialog.showModal === "function") imgDialog.showModal();
+    else imgDialog.setAttribute("open", "");
+  });
+
+  $("imgClose").addEventListener("click", function () { imgDialog.close(); });
+
+  // Click anywhere outside the photo to close.
+  imgDialog.addEventListener("click", function (e) {
+    if (e.target !== $("imgFull") && e.target !== $("imgClose")) imgDialog.close();
+  });
+
   /* ---------- Load ---------- */
   fetch(DATA_URL, { cache: "no-cache" })
     .then(function (res) {
@@ -176,6 +193,6 @@
       var err = $("error");
       err.hidden = false;
       err.textContent = "Could not load " + DATA_URL + ". If you opened this file directly, serve the folder through a local web server (for example XAMPP) instead.";
-      $("avatar").hidden = true;
+      $("avatarBtn").hidden = true;
     });
 })();

@@ -47,11 +47,23 @@ body {
 /* Profile */
 .profile { text-align: center; margin-bottom: 36px; }
 
+.avatar-btn {
+  display: block;
+  margin: 0 auto 18px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  cursor: zoom-in;
+}
+.avatar-btn[hidden] { display: none; }
+.avatar-btn:focus-visible { outline-offset: 3px; }
+
 .avatar {
   display: block;
   width: 104px;
   height: 104px;
-  margin: 0 auto 18px;
+  margin: 0;
   border-radius: 50%;
   object-fit: cover;
   background: var(--line);
@@ -237,6 +249,50 @@ a:focus-visible, button:focus-visible {
   color: var(--muted);
   font-size: 0.9rem;
 }
+
+/* Image viewer */
+.img-dialog {
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: hidden;
+}
+.img-dialog[open] { display: grid; place-items: center; }
+.img-dialog::backdrop { background: rgba(8, 10, 14, 0.85); }
+
+.img-full {
+  display: block;
+  max-width: min(92vw, 900px);
+  max-height: 88vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.img-close {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  cursor: pointer;
+}
+.img-close:hover { background: rgba(255, 255, 255, 0.28); }
+.img-close svg { width: 20px; height: 20px; }
+.img-close:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
 
 /* Footer */
 .footer {
