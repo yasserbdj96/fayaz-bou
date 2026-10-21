@@ -16,10 +16,21 @@
       "description": "Connect with me on Facebook"
     },
     {
+      "platform": "whatsapp",
+      "label": "WhatsApp",
+      "url": "https://wa.me/213657742969",
+      "description": "+213 657 74 29 69"
+    },
+    {
       "platform": "phone",
       "label": "Phone",
-      "url": "tel:+213549467398",
-      "description": "+213 549 467 398"
+      "url": "tel:+213657742969",
+      "description": "+213 657 74 29 69"
+    },
+    {
+      "platform": "email",
+      "label": "Email",
+      "url": "mailto:fayaz.bou@gmail.com"
     }
   ]
 }
