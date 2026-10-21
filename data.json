@@ -2,19 +2,8 @@
   "title": "Fayaz | Links",
   "name": "Fayaz Boudjadja",
   "description": "None",
-  "image": "720611487_18013041065903468_2628099714636869920_n.jpg",
+  "image": "WhatsApp Image 2026-10-21 at 14.44.57.jpeg",
   "links": [
-    {
-      "platform": "instagram",
-      "label": "Instagram",
-      "url": "https://www.instagram.com/fa_ya__zz"
-    },
-    {
-      "platform": "Facebook",
-      "label": "Facebook",
-      "url": "https://www.facebook.com/fayaz.bou.599327",
-      "description": "Connect with me on Facebook"
-    },
     {
       "platform": "whatsapp",
       "label": "WhatsApp",
@@ -31,6 +20,17 @@
       "platform": "email",
       "label": "Email",
       "url": "mailto:fayazz.fayaz02@gmail.com"
+    },
+        {
+      "platform": "Facebook",
+      "label": "Facebook",
+      "url": "https://www.facebook.com/fayaz.bou.599327",
+      "description": "Connect with me on Facebook"
+    },
+    {
+      "platform": "instagram",
+      "label": "Instagram",
+      "url": "https://www.instagram.com/fa_ya__zz"
     }
   ]
 }
