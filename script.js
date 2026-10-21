@@ -137,7 +137,7 @@
   function openQr(title, url) {
     currentUrl = url;
     $("qrTitle").textContent = title;
-    $("qrUrl").textContent = url.replace(/^mailto:/i, "");
+    $("qrUrl").textContent = url.replace(/^(mailto|tel):/i, "");
     $("qrCode").innerHTML = qrSvg(url);
     copyBtn.textContent = "Copy link";
     if (typeof dialog.showModal === "function") dialog.showModal();
